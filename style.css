@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Minecraft;
+  src: url("fontes/Minecraft.ttf") format("truetype");
+}
+
+:root {
+  --padrao: #c1c1c1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("imagens/fundo.png");
+  background-attachment: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Minecraft;
+  margin: 50px;
+  height: 100vh;
+}
+
+button {
+  margin-top: 10px;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Minecraft;
+}
+
+.logo {
+  margin-bottom: 15px;
+}
+
+.logo > img {
+  width: 100%;
+  transform: scale(0.8);
+}
+
+main {
+  width: 90vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opc {
+  background-color: var(--padrao);
+  padding: 10px;
+  text-align: center;
+  border: 2px solid white;
+  outline: 2px solid black;
+}
+
+.opc:hover {
+  background-color: green;
+  color: white;
+}
+
+.potion {
+  order: -1;
+}
+
+.menu > .opc {
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.potion {
+  margin-bottom: 40px;
+  padding: 5px;
+  align-self: flex-end;
+}
+
+.potion > img {
+  width: 30px;
+  height: 40px;
+}
+
+.player > .nome {
+  color: white;
+  background-color: #00000072;
+}
+
+.player > .skin {
+  height: 150px;
+}
+
